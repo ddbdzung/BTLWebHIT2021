@@ -1,0 +1,62 @@
+BTL: disney.sg
+
+Tên nhóm: Nhóm 8
+
+Thành viên: 
+1. Đặng Đức Bảo Dũng
+2. Lã Huy Hoàng
+3. Nguyễn Văn Việt
+
+Thời hạn: khoảng 1 tháng (13/12/2021 - 07/01/2022)
+
+Phân chia công việc:
+Clone lại các trang sau: 
+- Trang chủ https://www.disney.sg/
+- Disney+: Trang unavailable
+- Trang Shop: https://www.disney.sg/shop
+- Trang Trending: https://www.disney.sg/ohmydisney
+- Trang Movies: https://movies.disney.sg/
+- Trang TV: https://tv.disney.sg/
+- Trang Parks: https://www.disney.sg/parks
+- Trang More: https://www.disney.sg/marvel
+
+Dũng: Trang chủ + Trang TV + Header + Footer
+Hoàng: Trang shop + Trang Trending + Trang Lỗi
+Việt: Trang movies + Trang Parks + Trang More
+
+<cú pháp hoặc chú thích nằm trong ngoặc này>
+
+Khởi tạo Project: 
+git clone https://github.com/ddbdzung/BTL_Web_HIT_2021.git
+
+Luồng làm việc:
+ 
+Trước khi code:
+git pull
+git branch <tên nhánh phụ>
+<quy ước đặt tên nhánh phụ: <Tên tính năng/phiên làm>_<Trạng thái>>
+<ví dụ: git branch TrangShop_Doing hoặc git branch TrangShop_HoanThien>
+
+git checkout <tên nhánh phụ vừa tạo>
+<bước này chuyển nơi làm việc từ nhánh chính qua nhánh phụ để code>
+
+<Code..>
+<Hoàn thành 1 phần, kiểm tra không lỗi...>
+
+git add . <add file vừa thực hiện sửa đổi>
+
+git commit -m"Vừa hoàn thành chức năng X nào đó"
+<không cần phải chuẩn chỉnh nhưng nên commit dễ hiểu và ngắn gọn mọi người đọc dễ hiểu liền>
+
+<lại code tiếp..>
+<thực hiện lại bước git add và git commit liên tục>
+
+<kết thúc phiên làm việc hoặc hoàn thành 1 trang phải push code tạo pull request>
+
+git push -u origin <tên nhánh phụ vừa tạo>
+<up code lên github, trước khi up kiểm tra xem có add thiếu file không, xem xem có add nhầm file không>
+
+Sau khi thực hiện xong các bước này, lên web vào link github https://github.com/ddbdzung/BTL_Web_HIT_2021, 
+sau đó qua mục Pull Request kiểm tra phần code vừa push lên. Tại đó sẽ thấy 
+
+
