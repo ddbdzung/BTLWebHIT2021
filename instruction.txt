@@ -29,13 +29,16 @@ Việt: Trang movies + Trang Parks + Trang More
 Khởi tạo Project: 
 git clone https://github.com/ddbdzung/BTL_Web_HIT_2021.git
 
+Quy ước nhánh chính tại máy local tên là main bằng lệnh:
+git branch -M main
+
 Luồng làm việc:
  
 Trước khi code:
 git pull
 git branch <tên nhánh phụ>
-<quy ước đặt tên nhánh phụ: <Tên tính năng/phiên làm>_<Trạng thái>>
-<ví dụ: git branch TrangShop_Doing hoặc git branch TrangShop_HoanThien>
+<quy ước đặt tên nhánh phụ: <Tên tính năng hoặc phiên làm việc>
+<ví dụ: git branch TrangShop_DangHoanThien>
 
 git checkout <tên nhánh phụ vừa tạo>
 <bước này chuyển nơi làm việc từ nhánh chính qua nhánh phụ để code>
@@ -59,4 +62,30 @@ git push -u origin <tên nhánh phụ vừa tạo>
 Sau khi thực hiện xong các bước này, lên web vào link github https://github.com/ddbdzung/BTL_Web_HIT_2021, 
 sau đó qua mục Pull Request kiểm tra phần code vừa push lên. Tại đó sẽ thấy 
 
+Sau khi pull request được Approve: Chấp nhận, code sẽ tự động được gộp vào nhánh chính
+Khi này, tại máy tính local cá nhân, nhánh phụ vừa tạo khi nãy đã hoàn thành nhiệm vụ của nó
+Thực hiện Checkout quay lại nhánh chính local bằng lệnh:
+git checkout <Tên nhánh chính>
+Sau đó thực hiện xóa nhánh phụ kia
+Xóa nó đi bằng lệnh: git branch -D <tên nhánh phụ cần xóa>
+Nếu không nhớ tên nhánh phụ, dùng lệnh 
+git branch 
+để xem hiện tại đang ở nhánh nào và xem tên tất cả các nhánh hiện có tại local
 
+Bắt đầu 1 phiên làm việc mới bằng những bước như trên
+Cuối cùng, kết thúc phiên làm việc bằng 1 lần kéo code về
+git pull origin main
+
+Ví dụ 1 phiên làm việc đơn giản:
+
+git checkout main
+git pull origin main
+git branch "TaoFileTest"
+git checkout TaoFileTest
+
+<Code ciếc các thứ>
+<Sau khi tạo xong file test>
+
+git add .
+git commit -m"Hoàn thiện tạo file test"
+git 
