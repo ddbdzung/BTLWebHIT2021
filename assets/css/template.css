@@ -149,22 +149,79 @@ html {
 #footer {
     height: 165px;
     width: 100%;
-    margin: 32px 0;
+    margin: 32px 0 0 0;
     position: absolute;
     bottom: 0;
-    background-color: rgba(204, 175, 203, 0.568);
 }
 
 .footer-container {
     margin-top: 10px;
     padding: 0 24px;
-    border: 1px solid black;
 }
 
 .logofooter-container {
     width: 80px;
+    height: 36px;
+    padding-left: 4px;
+    margin: 0 auto;
     background: url(../lib/disney/disney-logo-footer.png) top center / cover no-repeat;
-    
+}
+
+#nav-footer-about {
+    padding: 16px 0 6px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+#nav-footer-legal {
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#nav-footer-about > li {
+    list-style-type: none;
+    margin: 0 12px;
+}
+
+#nav-footer-legal > li {
+    list-style-type: none;
+    margin: 0 14px;
+    padding: 0 5px;
+}
+
+#nav-footer-about > li:first-child {
+    padding-left: 15px;
+}
+
+#nav-footer-about > li:last-child {
+    padding-right: 15px;
+}
+
+#nav-footer-legal > li > a,
+#nav-footer-about > li > a {
+    color: rgba(51, 51, 51, 0.808);
+    font-size: 12px;
+    line-height: 14.4px;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+#nav-footer-legal > li > a:hover,
+#nav-footer-about > li > a:hover {
+    color: #1786eb;
+}
+
+#footer-copyright {
+    color: rgba(51, 51, 51, 0.925);
+    font-size: 12px;
+    margin: 0 2px;
+    text-align: center;
 }
 
 /* End Footer */
