@@ -129,8 +129,9 @@
     background-color: #eee;
 }
 
-#upcoming-movies {
-    
+#all-upcoming {
+    float: left;
+    width: 100%;
 }
 
 #upcoming-movies #text-upcoming {
@@ -167,6 +168,25 @@
     width: 100%;
     border-radius: 5px;
 }
+
+#all-latest-trailer {
+    /* float: left;
+    width: 100%; */
+}
+ #all-latest-trailer #latest-trailer {
+     width: 100%;
+     float: left;
+ }
+
+ #video-trailer {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 20px;
+ }
+
+
+
+
 
 
 
