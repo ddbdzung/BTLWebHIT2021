@@ -5,11 +5,12 @@
 }
 
 html {
-    font-family: Matterhorn, Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 #app {
     background-color: burlywood;
+    width: 100vw;
 }
 
 #header {
@@ -77,6 +78,19 @@ html {
     background-color: #303030;
 }
 
+.left-header .nav li:hover > a:not(#HeadingDisneyPlus, #HeadingDisney, #HeadingParks):before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    border-left: solid transparent 9px;
+    border-right: solid transparent 9px;
+    border-bottom: solid #232b2d 9px;
+    border-radius: 0;
+    background-color: transparent;
+    height: 0;
+    width: 0;
+}
+
 .left-header .nav li:hover .subnav > a {
     display: inline-block;
     text-decoration: none;
@@ -86,6 +100,7 @@ html {
     padding: 0 20px;
     line-height: 54px;
 }
+
 .left-header .nav li:hover .subnav > a:before {
     content: " ";
     padding-left: 20px;
@@ -97,6 +112,17 @@ html {
 
 .right-header {
     flex-grow: 3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.right-header #signin-register {
+    display: inline-block;
+    padding: 12px 6px;
+    text-decoration: none !important;
+    font-weight: 400;
+    margin-right: 25px;
 }
 
 #footer {
