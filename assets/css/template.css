@@ -1,3 +1,5 @@
+/* Begin General */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -12,9 +14,21 @@ html {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+/* End General */
+
 #app {
+    position: relative;
     width: 100vw;
+    min-height: 100vh;
 }
+
+#app::after {
+    content: '';
+    display: block;
+    height: 165px; /* Set same as footer's height */
+}
+
+/* Begin Header */
 
 #header {
     height: 67px;
@@ -128,7 +142,17 @@ html {
     margin-right: 25px;
 }
 
+/* End Header */
+
+/* Begin Footer */
+
 #footer {
-    height: 500px;
-    color: white;
+    height: 165px;
+    width: 100%;
+    margin: 32px 0;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(204, 175, 203, 0.568);
 }
+
+/* End Footer */
