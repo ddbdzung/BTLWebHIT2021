@@ -34,7 +34,6 @@ html {
     height: 67px;
     width: 100%;
     background-color: #fff;
-    color: rgb(48, 48, 48);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -120,7 +119,7 @@ html {
 }
 
 .left-header .nav li:hover .subnav > a:before {
-    content: " ";
+    content: "";
     padding-left: 20px;
 }
 

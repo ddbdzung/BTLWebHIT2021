@@ -1,7 +1,13 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.heading:not(#HeadingMovies) {
+    color: #757575 !important;
+}
+
+.left-header .nav .subnav > a {
+    color: #9f9f9f !important;
+}
+
+.left-header .nav .subnav-movies a:first-child {
+    color: #fff !important;
 }
 
 #slider-movies {
