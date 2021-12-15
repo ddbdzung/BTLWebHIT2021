@@ -1,22 +1,39 @@
+/* Begin General */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-html {
-    font-family: Matterhorn, Helvetica, Arial, sans-serif;
+a {
+    color: #000;
 }
 
-#app {
-    background-color: burlywood;
+html {
+    font-family: Helvetica, Arial, sans-serif;
 }
+
+/* End General */
+
+#app {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+#app::after {
+    content: '';
+    display: block;
+    height: 165px; /* Set same as footer's height */
+}
+
+/* Begin Header */
 
 #header {
     height: 67px;
     width: 100%;
     background-color: #fff;
-    color: rgb(48, 48, 48);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -78,6 +95,19 @@ html {
     background-color: #303030;
 }
 
+.left-header .nav li:hover > a:not(#HeadingDisneyPlus, #HeadingDisney, #HeadingParks):before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    border-left: solid transparent 9px;
+    border-right: solid transparent 9px;
+    border-bottom: solid #232b2d 9px;
+    border-radius: 0;
+    background-color: transparent;
+    height: 0;
+    width: 0;
+}
+
 .left-header .nav li:hover .subnav > a {
     display: inline-block;
     text-decoration: none;
@@ -87,8 +117,9 @@ html {
     padding: 0 20px;
     line-height: 54px;
 }
+
 .left-header .nav li:hover .subnav > a:before {
-    content: " ";
+    content: "";
     padding-left: 20px;
 }
 
@@ -98,9 +129,99 @@ html {
 
 .right-header {
     flex-grow: 3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-#footer {
-    height: 500px;
-    color: white;
+.right-header #signin-register {
+    display: inline-block;
+    padding: 12px 6px;
+    text-decoration: none !important;
+    font-weight: 400;
+    margin-right: 25px;
 }
+
+/* End Header */
+
+/* Begin Footer */
+
+#footer {
+    height: 165px;
+    width: 100%;
+    margin: 32px 0 0 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-container {
+    margin-top: 10px;
+    padding: 0 24px;
+}
+
+.logofooter-container {
+    width: 80px;
+    height: 36px;
+    padding-left: 4px;
+    margin: 0 auto;
+    background: url(../lib/disney/disney-logo-footer.png) top center / cover no-repeat;
+}
+
+#nav-footer-about {
+    padding: 16px 0 6px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+#nav-footer-legal {
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#nav-footer-about > li {
+    list-style-type: none;
+    margin: 0 12px;
+}
+
+#nav-footer-legal > li {
+    list-style-type: none;
+    margin: 0 14px;
+    padding: 0 5px;
+}
+
+#nav-footer-about > li:first-child {
+    padding-left: 15px;
+}
+
+#nav-footer-about > li:last-child {
+    padding-right: 15px;
+}
+
+#nav-footer-legal > li > a,
+#nav-footer-about > li > a {
+    color: rgba(51, 51, 51, 0.808);
+    font-size: 12px;
+    line-height: 14.4px;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+#nav-footer-legal > li > a:hover,
+#nav-footer-about > li > a:hover {
+    color: #1786eb;
+}
+
+#footer-copyright {
+    color: rgba(51, 51, 51, 0.925);
+    font-size: 12px;
+    margin: 0 2px;
+    text-align: center;
+}
+
+/* End Footer */
