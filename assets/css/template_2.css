@@ -1,6 +1,5 @@
 /** 
- ** Dành cho layout sử dụng flex-box và float cùng nhau 
- *! (có khả năng lỗi layout nếu không xử lý tốt float)
+ ** Dành cho layout sử dụng flex-box thuần, không dùng float
  */
 /* Begin General */
 
@@ -154,9 +153,9 @@ html {
     height: 165px;
     width: 100%;
     margin: 32px 0 0 0;
-    position: relative;
+    position: absolute;
     z-index: 1;
-    float: left;    
+    bottom: 0;
 }
 
 .footer-container {
