@@ -1,6 +1,4 @@
-#content-container {
-    background-color: rgb(238, 238, 238);
-}
+#content-container {}
 
 /* Begin head-content-container */
 
@@ -108,5 +106,6 @@
     width: 100%;
     padding: 20px 0;
     height: 300px;
-    background-color: white;
+    background-color: pink;
+    margin-bottom: 100px;
 }
