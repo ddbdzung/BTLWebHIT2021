@@ -17,6 +17,10 @@ html {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+body {
+    background-color: rgb(238, 238, 238);
+}
+
 /* End General */
 
 #app {
@@ -36,7 +40,7 @@ html {
 #header {
     height: 67px;
     width: 100%;
-    background-color: #fff;
+    background-color: #fff !important;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -160,6 +164,7 @@ html {
     position: absolute;
     z-index: 1;
     bottom: 0;
+    background-color: #fff !important;
 }
 
 .footer-container {
