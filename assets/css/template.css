@@ -59,9 +59,13 @@ html {
     justify-content: flex-start;
 }
 
-.left-header #disney-logo {
-    height: 67px;
-    margin-left: 3px;
+.left-header .disney-logo-header {
+    display: inline-block;
+    background-image: url(../../assets/lib/disney/disney-logo-header.png);
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    height: 26px;
+    width: 100px;
 }
 
 .left-header .nav li {
