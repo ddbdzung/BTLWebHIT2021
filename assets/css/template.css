@@ -37,7 +37,7 @@ html {
 #header {
     height: 67px;
     width: 100%;
-    background-color: #fff;
+    background-color: #fff !important;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -160,7 +160,8 @@ html {
     margin: 32px 0 0 0;
     position: relative;
     z-index: 1;
-    float: left;    
+    float: left;   
+    background-color: #fff !important;
 }
 
 .footer-container {
