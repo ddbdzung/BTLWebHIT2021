@@ -4,6 +4,18 @@
     box-sizing: border-box;
 }
 
+.heading:not(#HeadingParks) {
+    color: #757575 !important;
+}
+
+.left-header .nav .subnav > a {
+    color: #9f9f9f !important;
+}
+
+.left-header .nav .subnav-parks a:first-child {
+    color: #fff !important;
+}
+
 .row-flex {
     display: flex;
     flex-wrap: wrap
@@ -214,7 +226,9 @@
 }  */
 
 
-
+.item-content {
+    transition: 0.25s linear;
+}
 
 .img-item {
     background-color: #fff;
@@ -293,7 +307,7 @@
     overflow: hidden;
 }
 
-.img-middle-park-content .middle-park-img {
+.img-middle-park-content::hover .middle-park-img {
     transform: scale(1.1);
 }
 
