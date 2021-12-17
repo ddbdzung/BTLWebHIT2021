@@ -226,8 +226,8 @@
 }  */
 
 
-.item-content {
-    transition: 0.25s linear;
+img {
+    transition: 0.4s linear;
 }
 
 .img-item {
@@ -239,10 +239,11 @@
 
 .item-content-block {
     overflow: hidden;
+    font-size: 0;
 }
 
 .item-content-block:hover .item-content {
-    transform: scale(1.1);
+    transform: scale(1.03);
 }
 
 .img-item .item-content {
@@ -307,8 +308,8 @@
     overflow: hidden;
 }
 
-.img-middle-park-content::hover .middle-park-img {
-    transform: scale(1.1);
+.img-middle-park-content:hover .middle-park-img {
+    transform: scale(1.03);
 }
 
 #contetn-middle .middle-park-img {

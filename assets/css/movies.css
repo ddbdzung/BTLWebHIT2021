@@ -19,9 +19,18 @@
     z-index: 0;
 }
 
+#hover-slider {
+    overflow: hidden;
+}
+
 #image-slider {
     padding-top: 41.92%;
     background: url("https://lumiere-a.akamaihd.net/v1/images/au_homepage_marvel_eternals_payoff_hero_r_63dc57c5.jpeg?region=0,0,2400,1002&width=960") top center / cover no-repeat;
+    transition: 0.3s linear;
+}
+
+#hover-slider:hover #image-slider {
+    transform: scale(1.03);
 }
 
 .sub-slider #text-content-movies {
@@ -94,6 +103,19 @@
 #first-content #right-img-first-content img {
     max-width: 100%;
     height: auto;
+}
+
+.hover-content {
+    overflow: hidden;
+    font-size: 0;
+}
+
+img {
+    transition: 0.4s linear;
+}
+
+.hover-content:hover .no_1{
+    transform: scale(1.03);
 }
 
 #first-content .text-img-first-content  {
@@ -176,9 +198,19 @@
     gap: 20px;
 }
 
+.img-div {
+    overflow: hidden;
+    font-size: 0;
+    border-radius: 5px;
+}
+
 .grid-img-upcoming .img-div .item-img-upcoming {
     width: 100%;
     border-radius: 5px;
+}
+
+.img-div:hover .item-img-upcoming {
+    transform: scale(1.03);
 }
 
 .bottom-aligner {
@@ -269,6 +301,15 @@
 
 .layout .layout-item {
     background-color: #fff;
+}
+
+.img-about {
+    overflow: hidden;
+    font-size: 0;
+}
+
+.img-about:hover > img {
+    transform: scale(1.03);
 }
 
 .layout-item img {
