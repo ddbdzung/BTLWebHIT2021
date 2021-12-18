@@ -18,6 +18,10 @@ html {
     font-family: 'Noto Sans', sans-serif;
 }
 
+body {
+    background-color: rgb(238, 238, 238);
+}
+
 /* End General */
 
 #app {
