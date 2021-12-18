@@ -1,3 +1,15 @@
+.heading:not(#HeadingShop) {
+  color: #757575 !important;
+}
+
+.left-header .nav .subnav > a {
+  color: #9f9f9f !important;
+}
+
+.left-header .nav .subnav-shop a:first-child {
+  color: #fff !important;
+}
+
 .mid{
   width: 100%;
 }
@@ -73,9 +85,9 @@
 }
 
 
-img{
+.mid img{
   transition: all .3s ease;}
-img:hover{
+.mid img:hover{
   -webkit-transform: scale(1); transform: scale(1.1);
 }
 
