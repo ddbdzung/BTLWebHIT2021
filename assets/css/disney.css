@@ -270,6 +270,7 @@
     margin-top: 10.8px;
     font-size: 16.5px;
     line-height: 18.2px;
+    padding: 20px 0;
 }
 
 .category {
@@ -277,7 +278,7 @@
     font-size: 14px;
     font-weight: 700;
     line-height: 1.3;
-    margin-top: 40px;
+    margin-top: auto;
     text-transform: uppercase;
 }
 
@@ -335,6 +336,7 @@
 }
 
 .mc4-item-flex {
+    display: flex;
     background-color: #fff;
     flex-direction: column;
     flex-grow: 1;
@@ -395,6 +397,7 @@
 }
 
 .mc5-item-flex {
+    display: flex;
     background-color: #fff;
     flex-direction: column;
     flex-grow: 1;
