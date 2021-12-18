@@ -1,15 +1,3 @@
-.heading:not(#HeadingShop) {
-  color: #757575 !important;
-}
-
-.left-header .nav .subnav > a {
-  color: #9f9f9f !important;
-}
-
-.left-header .nav .subnav-shop a:first-child {
-  color: #fff !important;
-}
-
 .mid{
   width: 100%;
 }

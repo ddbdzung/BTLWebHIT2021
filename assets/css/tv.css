@@ -1,15 +1,3 @@
-.heading:not(#HeadingTv) {
-    color: #757575 !important;
-}
-
-.left-header .nav .subnav > a {
-    color: #9f9f9f !important;
-}
-
-.left-header .nav .subnav-tv a:first-child {
-    color: #fff !important;
-}
-
 /* Begin main-content-1 */
 
 #main-content-1 {
