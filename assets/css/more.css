@@ -250,16 +250,29 @@ img {
     gap: 20px;
 }
 
+#div-1 {
+    width: 100%;
+    height: 12px;
+    background-color: #fff;
+}
+
 .all-shop-container-5 {
     background-color: #fff;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .div-but {
-    margin-top: 12px;
+    /* margin-top: 12px; */
     text-align: center;
-    margin-top: auto;
+
+}
+
+.all-but-4, .all-but-10, 
+.all-but-12 {
+    position: absolute;
+    bottom: 0;
 }
 
 .buy-now {
@@ -272,6 +285,12 @@ img {
     font-weight: bold;
     font-size: 18px;
     opacity: 0.8;
+}
+
+.div-but:hover .buy-now {
+    background-color: #0077da;
+    color: #fff;
+    cursor: pointer;
 }
 
 .div-text-container-5 {
