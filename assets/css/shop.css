@@ -34,8 +34,7 @@
   text-align: center;
 }
 .mickey , .marvel , .pri , .star , .pixar , .fro {
-  overflow: hidden; /** DÒNG BẮT BUỘC CÓ **/ 
-	/* position: relative; */
+  overflow: hidden;
   margin-top: -4px;
 }
 .mickey_logo img{
@@ -85,16 +84,21 @@
 }
 
 
-.mid img{
+.mid_img img , .mid_td_img img {
   transition: all .3s ease;}
-.mid img:hover{
+.mid_img img:hover{
   -webkit-transform: scale(1); transform: scale(1.1);
 }
-
+.mid_td_img img:hover{
+  -webkit-transform: scale(1); transform: scale(1.1);
+}
 .mid_trending{
   width: 100%;
   text-align: center;
   margin-top: 100px;
+}
+.td1{
+  overflow: hidden;
 }
 .mid_td_text{
   font-size: 25px;
@@ -116,6 +120,7 @@
 }
 .mid_td_text1{
   margin-top: 120px;
+  font-size: 27px;
 }
 
 .mid_shop{
@@ -130,9 +135,13 @@
 .shop1 img{
   margin-top: 30px;
   width: 90%;
+  background-color: rgb(255, 245, 245);
 }
 .box{
   background-color: rgb(255, 255, 255);
+  width: 22%;
+  margin: 30px 20px;
+  border-radius: 20px;
   height: 600px;
   display: block;
 }
