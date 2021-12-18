@@ -286,7 +286,7 @@
 /* Begin main-content-3 */
 
 #main-content-3 {
-    padding: 24px 60px;
+    padding: 24px 100px;
 }
 
 .main-content-3-container {
@@ -327,7 +327,7 @@
 /* Begin main-content-4 */
 
 #main-content-4 {
-    padding: 24px 60px;
+    padding: 24px 100px;
 }
 
 .mc4-item-container {
@@ -387,3 +387,98 @@
 }   
 
 /* End main-content-4 */
+
+/* Begin main-content-5 */
+
+#main-content-5 {
+    padding: 24px 100px;
+}
+
+.mc5-item-flex {
+    background-color: #fff;
+    flex-direction: column;
+    flex-grow: 1;
+    min-height: 100%;
+}
+
+.main-content-5-grid-container {
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: stretch;
+
+    width: 100%;
+    height: 100%;
+}
+
+.mc5-item-container {
+    position: relative;
+}
+
+.mc5-aspect-ratio {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    min-height: 100%;
+}
+
+.item-link:hover .mc5-item-image {
+    transform: scale(1.03);
+    cursor: pointer;    
+}
+
+.mc5-item-image {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.25s linear;
+}   
+
+/* End main-content-5 */
+
+/* Begin main-content-6 */
+
+#main-content-6 {
+    background-color: #fff;
+    padding: 24px 100px;
+
+}
+
+#main-content-6 .main-content-6-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    justify-items: stretch;
+
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+}
+
+.main-content-6-container .item-container {
+    position: relative;
+}
+
+.main-content-6-container .aspect-ratio {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100%;
+    min-height: 100%;
+}
+
+.main-content-6-container .item-image {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.25s linear;
+}   
+
+/* End main-content-6 */
