@@ -7,7 +7,7 @@ Thành viên:
 2. Lã Huy Hoàng
 3. Nguyễn Văn Việt
 
-Thời hạn: khoảng 1 tháng (13/12/2021 - 07/01/2022)
+Thời hạn: 1 tuần (13/12/2021 - 21/12/2021)
 
 Phân chia công việc:
 Clone lại các trang sau: 
@@ -103,3 +103,5 @@ git pull origin main
 git branch -D TaoFileTest
 
 -> Hoàn tất 1 phiên làm việc
+
+Hoàn tất vào 03h20p 19-12-2021
