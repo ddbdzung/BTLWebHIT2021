@@ -43,6 +43,10 @@
     left: 4%;
 }
 
+.sub-slider #text-content-movies:hover .text-final {
+    cursor: pointer;
+}
+
 .sub-slider #enternal-main {
     width: 73%;
     margin: 0 auto;
@@ -53,14 +57,29 @@
     background-image: url("/images/enternal.png");
     background-repeat: no-repeat;
     background-size: contain;
+    animation-name: enternal-slider;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes enternal-slider {
+    0% {transform: scale(1.0);}
+    50% {transform: scale(1.05);}
+    100% {transform: scale(1.0);}
 }
 
 .sub-slider .text-content-mid {
-    color: #fff;
+    /* color: #fff; */
     text-transform: uppercase;
     font-size: 18px;
     margin-bottom: 13px;
     font-weight: 500;
+}
+
+.sub-slider .text-content-mid > a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .sub-slider .text-final {
@@ -69,6 +88,16 @@
     border-style: none;
     border-radius: 50px;
     background-color: #fff;
+    animation-name: but-slider;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes but-slider {
+    0% {background-color: #cc3622; transform: scale(1.01);}
+    50% {background-color: #0838d8; transform: scale(1.05);}
+    100% {background-color: #cc3622; transform: scale(1.01);}
 }
 
 .sub-slider .text-final > p {
@@ -76,6 +105,7 @@
     font-size: 12px;
     text-transform: uppercase;
     font-weight: 800;
+    color: #fff;
 }
 
 #content-movies {
@@ -142,13 +172,18 @@ img {
     border-radius: 50px;
     border-style: none;
     background-color: #0077DA;
-    color: #fff;
+    /* color: #fff; */
+}
+
+#first-content .first-content-but a {
+    text-decoration: none;
 }
 
 #first-content .first-content-but .text-but {
     font-size: 13px;
     text-transform: uppercase;
-    font-weight: 750;
+    font-weight: 800;
+    color: #fff;
 }
 
 #last-content {
@@ -308,7 +343,7 @@ img {
     font-size: 0;
 }
 
-.img-about:hover > img {
+.img-about:hover img {
     transform: scale(1.03);
 }
 
