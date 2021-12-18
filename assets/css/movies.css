@@ -19,6 +19,10 @@
     z-index: 0;
 }
 
+.sub-slider:hover #image-slider {
+transform: scale(1.03);
+}
+
 #hover-slider {
     overflow: hidden;
 }
@@ -27,10 +31,6 @@
     padding-top: 41.92%;
     background: url("https://lumiere-a.akamaihd.net/v1/images/au_homepage_marvel_eternals_payoff_hero_r_63dc57c5.jpeg?region=0,0,2400,1002&width=960") top center / cover no-repeat;
     transition: 0.3s linear;
-}
-
-#hover-slider:hover #image-slider {
-    transform: scale(1.03);
 }
 
 .sub-slider #text-content-movies {
@@ -144,7 +144,11 @@ img {
     transition: 0.4s linear;
 }
 
-.hover-content:hover .no_1{
+#left-img-first-content:hover .no_1{
+    transform: scale(1.03);
+}
+
+#right-img-first-content:hover .no_1 {
     transform: scale(1.03);
 }
 
@@ -157,6 +161,7 @@ img {
 }
 
 #first-content .text-header-img-first-content {
+    color: #fff;
     font-size: 20px;
     font-weight: 500;
     padding-bottom: 18px;
@@ -217,6 +222,10 @@ img {
     padding: 20px 0;
     font-size: 17.5px;
     opacity: 0.7;
+}
+
+a {
+    text-decoration: none;
 }
 
 #img-final,
@@ -284,6 +293,9 @@ img {
 
  .video-latest {
      background-color: #fff;
+     display: flex;
+     flex-direction: column;
+     flex-grow: 1;
  }
 
  .video-latest img {
@@ -293,6 +305,9 @@ img {
  .text-form-latest {
      padding: 30px;
      min-width: 100%;
+     display: flex;
+     flex-direction: column;
+     flex-grow: 1;
      /* background-color: #fff; */
  }
 
@@ -308,6 +323,7 @@ img {
  }
 
  .text-form-latest .footer-format-latest {
+     margin-top: auto;
      font-size: 12px;
  }
 
@@ -336,6 +352,8 @@ img {
 
 .layout .layout-item {
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
 }
 
 .img-about {
@@ -360,8 +378,11 @@ img {
 }
 
 .text-about {
+    display: flex;
     padding: 30px;
     width: 100%;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .text-about .text-about-header {
@@ -376,6 +397,7 @@ img {
 }
 
 .text-about .text-about-footer {
+    margin-top: auto;
     font-size: 12px;
 }
 

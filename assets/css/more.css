@@ -39,13 +39,22 @@
     overflow: hidden;
 }
 
+a {
+    text-decoration: none;
+}
+
+.text-first,
+.text-last {
+    color: #fff;
+}
+
 #image-slider {
     padding-top: 41.92%;
     background: url("https://lumiere-a.akamaihd.net/v1/images/au_homepage_marvel_eternals_payoff_hero_r_63dc57c5.jpeg?region=0,0,2400,1002&width=960") top center / cover no-repeat;
     transition: 0.3s linear;
 }
 
-#hover-slider:hover #image-slider {
+.sub-slider:hover #image-slider {
     transform: scale(1.03);
 }
 
