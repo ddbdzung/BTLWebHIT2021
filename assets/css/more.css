@@ -27,8 +27,6 @@
 }
 
 #slider-movies {
-    padding-bottom: 23px;
-    background-color: #fff;
     width: 100%;
 }
 
@@ -41,13 +39,22 @@
     overflow: hidden;
 }
 
+a {
+    text-decoration: none;
+}
+
+.text-first,
+.text-last {
+    color: #fff;
+}
+
 #image-slider {
     padding-top: 41.92%;
     background: url("https://lumiere-a.akamaihd.net/v1/images/au_homepage_marvel_eternals_payoff_hero_r_63dc57c5.jpeg?region=0,0,2400,1002&width=960") top center / cover no-repeat;
     transition: 0.3s linear;
 }
 
-#hover-slider:hover #image-slider {
+.sub-slider:hover #image-slider {
     transform: scale(1.03);
 }
 
@@ -61,6 +68,10 @@
     left: 4%;
 }
 
+.sub-slider #text-content-movies:hover .text-final {
+    cursor: pointer;
+}
+
 .sub-slider #enternal-main {
     width: 73%;
     margin: 0 auto;
@@ -71,14 +82,29 @@
     background-image: url("/images/enternal.png");
     background-repeat: no-repeat;
     background-size: contain;
+    animation-name: enternal-slider;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes enternal-slider {
+    0% {transform: scale(1.0);}
+    50% {transform: scale(1.05);}
+    100% {transform: scale(1.0);}
 }
 
 .sub-slider .text-content-mid {
-    color: #fff;
+    /* color: #fff; */
     text-transform: uppercase;
     font-size: 18px;
     margin-bottom: 13px;
     font-weight: 500;
+}
+
+.sub-slider .text-content-mid > a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .sub-slider .text-final {
@@ -87,6 +113,16 @@
     border-style: none;
     border-radius: 50px;
     background-color: #fff;
+    animation-name: but-slider;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes but-slider {
+    0% {background-color: #cc3622; transform: scale(1.01);}
+    50% {background-color: #0838d8; transform: scale(1.05);}
+    100% {background-color: #cc3622; transform: scale(1.01);}
 }
 
 .sub-slider .text-final > p {
@@ -94,6 +130,13 @@
     font-size: 12px;
     text-transform: uppercase;
     font-weight: 800;
+    color: #fff;
+}
+
+#divv {
+    width: 100%;
+    height: 23px;
+    color: #fff;
 }
 
 #container {
@@ -266,7 +309,6 @@ img {
 .div-but {
     /* margin-top: 12px; */
     text-align: center;
-
 }
 
 .all-but-4, .all-but-10, 

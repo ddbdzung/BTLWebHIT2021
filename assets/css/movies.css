@@ -19,6 +19,10 @@
     z-index: 0;
 }
 
+.sub-slider:hover #image-slider {
+transform: scale(1.03);
+}
+
 #hover-slider {
     overflow: hidden;
 }
@@ -27,10 +31,6 @@
     padding-top: 41.92%;
     background: url("https://lumiere-a.akamaihd.net/v1/images/au_homepage_marvel_eternals_payoff_hero_r_63dc57c5.jpeg?region=0,0,2400,1002&width=960") top center / cover no-repeat;
     transition: 0.3s linear;
-}
-
-#hover-slider:hover #image-slider {
-    transform: scale(1.03);
 }
 
 .sub-slider #text-content-movies {
@@ -43,6 +43,10 @@
     left: 4%;
 }
 
+.sub-slider #text-content-movies:hover .text-final {
+    cursor: pointer;
+}
+
 .sub-slider #enternal-main {
     width: 73%;
     margin: 0 auto;
@@ -53,14 +57,29 @@
     background-image: url("/images/enternal.png");
     background-repeat: no-repeat;
     background-size: contain;
+    animation-name: enternal-slider;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes enternal-slider {
+    0% {transform: scale(1.0);}
+    50% {transform: scale(1.05);}
+    100% {transform: scale(1.0);}
 }
 
 .sub-slider .text-content-mid {
-    color: #fff;
+    /* color: #fff; */
     text-transform: uppercase;
     font-size: 18px;
     margin-bottom: 13px;
     font-weight: 500;
+}
+
+.sub-slider .text-content-mid > a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .sub-slider .text-final {
@@ -69,6 +88,16 @@
     border-style: none;
     border-radius: 50px;
     background-color: #fff;
+    animation-name: but-slider;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes but-slider {
+    0% {background-color: #cc3622; transform: scale(1.01);}
+    50% {background-color: #0838d8; transform: scale(1.05);}
+    100% {background-color: #cc3622; transform: scale(1.01);}
 }
 
 .sub-slider .text-final > p {
@@ -76,6 +105,7 @@
     font-size: 12px;
     text-transform: uppercase;
     font-weight: 800;
+    color: #fff;
 }
 
 #content-movies {
@@ -114,7 +144,11 @@ img {
     transition: 0.4s linear;
 }
 
-.hover-content:hover .no_1{
+#left-img-first-content:hover .no_1{
+    transform: scale(1.03);
+}
+
+#right-img-first-content:hover .no_1 {
     transform: scale(1.03);
 }
 
@@ -127,6 +161,7 @@ img {
 }
 
 #first-content .text-header-img-first-content {
+    color: #fff;
     font-size: 20px;
     font-weight: 500;
     padding-bottom: 18px;
@@ -142,13 +177,18 @@ img {
     border-radius: 50px;
     border-style: none;
     background-color: #0077DA;
-    color: #fff;
+    /* color: #fff; */
+}
+
+#first-content .first-content-but a {
+    text-decoration: none;
 }
 
 #first-content .first-content-but .text-but {
     font-size: 13px;
     text-transform: uppercase;
-    font-weight: 750;
+    font-weight: 800;
+    color: #fff;
 }
 
 #last-content {
@@ -182,6 +222,10 @@ img {
     padding: 20px 0;
     font-size: 17.5px;
     opacity: 0.7;
+}
+
+a {
+    text-decoration: none;
 }
 
 #img-final,
@@ -249,6 +293,9 @@ img {
 
  .video-latest {
      background-color: #fff;
+     display: flex;
+     flex-direction: column;
+     flex-grow: 1;
  }
 
  .video-latest img {
@@ -258,6 +305,9 @@ img {
  .text-form-latest {
      padding: 30px;
      min-width: 100%;
+     display: flex;
+     flex-direction: column;
+     flex-grow: 1;
      /* background-color: #fff; */
  }
 
@@ -273,6 +323,7 @@ img {
  }
 
  .text-form-latest .footer-format-latest {
+     margin-top: auto;
      font-size: 12px;
  }
 
@@ -301,6 +352,8 @@ img {
 
 .layout .layout-item {
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
 }
 
 .img-about {
@@ -308,7 +361,7 @@ img {
     font-size: 0;
 }
 
-.img-about:hover > img {
+.img-about:hover img {
     transform: scale(1.03);
 }
 
@@ -325,8 +378,11 @@ img {
 }
 
 .text-about {
+    display: flex;
     padding: 30px;
     width: 100%;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .text-about .text-about-header {
@@ -341,6 +397,7 @@ img {
 }
 
 .text-about .text-about-footer {
+    margin-top: auto;
     font-size: 12px;
 }
 

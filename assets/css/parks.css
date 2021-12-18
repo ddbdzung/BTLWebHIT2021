@@ -65,6 +65,10 @@
     justify-content: space-around;
 }
 
+a {
+    text-decoration: none;
+}
+
 .ticket {
     width: 320px;
 }
@@ -84,6 +88,10 @@
     padding-left: 16px;
     font-size: 15px;
     opacity: 0.4;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 .sub-ticket .ti-angle-double-down {
@@ -269,7 +277,7 @@ img {
     padding-bottom: 38px;
 }
 
-.img-item .text-but {
+.img-item .text-but > a {
     padding: 16px 32px;
     font-size: 16px;
     text-transform: uppercase;
